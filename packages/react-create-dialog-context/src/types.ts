@@ -17,7 +17,7 @@ export type OpenConfirmModalReturnValueType<P> = {
   onDismiss: (callback: (result: DismissResult<P>) => void) => OpenConfirmModalReturnValueType<P>;
 };
 
-export type ModalBaseProps<T = unknown> = {
+export type ModalBaseProps<T = any> = {
   onConfirm?: (result?: T) => void;
   onDismiss: (result?: T) => void;
 };
