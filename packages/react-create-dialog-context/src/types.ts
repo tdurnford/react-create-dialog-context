@@ -1,4 +1,4 @@
-import type { Context, FC } from 'react';
+import type { Context, FC, PropsWithChildren } from 'react';
 
 export type ConfirmResult<P> = P extends { onConfirm?: (result: infer R) => void } ? R : never;
 export type DismissResult<P> = P extends { onDismiss?: (result: infer R) => void } ? R : never;
@@ -30,5 +30,5 @@ export type ConfirmationDialogContext<P extends ModalBaseProps> = Omit<
   Context<OpenConfirmationModal<P>>,
   'Provider'
 > & {
-  Provider: FC;
+  Provider: FC<PropsWithChildren<{}>>;
 };
