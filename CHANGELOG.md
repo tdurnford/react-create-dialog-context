@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2023-12-17
+### Fixed
+-  Fix type issue with `ConfirmationDialogContext.Provider`, by [@tdurnford](https://github.com/tdurnford)
+
 ## [0.0.1] - 2023-06-13
 
 ### Added
